@@ -1,0 +1,458 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(13 14 6);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: "bangers", sans-serif;
+    font-size: 220%;
+    margin: 0;
+}
+
+h2 {
+    font-family: "bangers", sans-serif;
+    font-size: 200%;
+    margin: 20px 0 13px 0;
+}
+
+h3 {
+    font-family: "bangers", sans-serif;
+    font-size: 150%;
+    margin: 20px 0 13px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0px 2%;
+}
+
+.flex-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 2%;
+}
+
+main {
+    margin-top: 100px;
+}
+
+
+
+/* Header */
+
+header {
+    background-color: rgb(83 121 12);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+header h1 {
+    align-self: center;
+    padding: 10px 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: rgb(13 14 6);
+}
+
+header h1 a:hover {
+    color: rgb(222 206 48);
+}
+    
+.site-nav {
+    flex: 1;
+    align-self: center;
+    box-sizing: border-box;
+}
+
+
+/* Site Navigation */
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    padding: 0px;
+    margin: 0;
+}
+
+.site-nav li {
+    list-style: none;
+    padding: 2.5%;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: rgb(13 14 6);
+    font-family: "bangers", sans-serif;
+    font-weight: 600;
+    font-size: 135%;
+}
+
+.site-nav a:hover {
+    color:rgb(222 206 48);
+}
+
+@media only screen and (max-width: 640px) {
+    main {
+        margin-top: 265px;
+    }
+
+    header .flex-container h1 {
+        flex: 100%;        margin-bottom: 0;
+        text-align: left;
+    }
+    .site-nav {
+        flex: 100%;
+        text-align: left;
+    }
+    .site-nav li {
+        flex: 100%;
+        list-style: none;
+        padding: 1.5%;
+    }
+}
+
+/* End Site Navigation */
+
+/* End Header */
+
+
+
+/* Flexbox */
+
+.desk-100 {
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.desk-66 {
+    width: 66.1%;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.desk-50 {
+    width: 49.4%;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.desk-33 {
+    width: 32.6%;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.desk-25 {
+    width: 24.1%;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.yellow {
+    background-color: rgba(222, 206, 48, 0.6);
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.green {
+    background-color: rgba(83, 121, 12, 0.7);
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+/* End Flexbox */
+
+
+/* Responsive Flexbox*/
+
+@media only screen and (max-width: 1024px) {
+    .tab-100 {
+        width: 100%;
+    }
+    .tab-50 {
+        width: 49.4%;
+    }
+    .tab-33 {
+        width: 32.2%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .mob-100 {
+        width: 100%;
+    }
+    .mob-50 {
+        width: 49.4%;
+    }
+}
+
+/* End Responsive Flexbox */
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(83 121 12);
+    margin-top: 80px;
+    font-size: 70%;
+}
+
+footer .container {
+    padding: 20px 0px 100px 0px;
+    color:rgb(13 14 6)
+
+}
+
+/* End Footer */
+
+
+
+
+/* Homepage */
+
+.banner-image {
+    background: url(../images/banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 820px;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 30px;
+    margin-top: -55px;
+}
+
+.banner-image h1 {
+    align-self: flex-end;
+    margin-bottom: 100px;
+    background-color: rgb(83 121 12);
+    padding: 10px 20px;
+}
+
+.banner-image h1:hover {
+    background-color: rgb(13 14 6);
+    box-shadow: 8px 8px 5px rgba(222, 206, 48, 0.6);
+}
+
+.banner-image a {
+    text-decoration: none;
+    color: rgb(13 14 6);
+}
+
+.banner-image a:hover {
+    color:rgb(222 206 48);
+}
+
+/* End Homepage */
+
+
+
+
+/* Brian Page */
+
+.banner-brian  {
+    background: url(../images/brian.jpg) no-repeat center;
+    background-size: cover;
+    height: 820px;
+    display: flex;
+    justify-content:center;
+    margin-top: -55px;s
+}
+
+/* End Brian Page */
+
+
+
+/* About Page */
+
+
+/* End About Page */
+
+
+
+/* Portfolio Page */
+
+.portfolio img {
+    margin-top: 1.2%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .portfolio img {
+        margin-top: 1.7%; 
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .portfolio img {
+        margin-top: 1.2%; 
+    }
+}
+
+/* End Portfolio Page */
+
+
+/* Prices Page */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 18.75% 18.75% 18.75% 18.5%;
+    grid-template-rows: 70px 90px 50px 50px 50px 50px 50px 50px;
+}
+
+.grid-item {
+    background-color:rgba(83, 121, 12, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.item-corner {
+    grid-row: 1 / span 2;
+    background-color: #FFF;
+}
+
+.item-row1 {
+    background-color: rgba(83, 121, 12, 0.7);
+    color: rgb(13 14 6);
+    font-family: "bangers", sans-serif;
+    font-size: 150%;
+}
+
+.item-row2 {
+    background-color: rgb(83, 121, 12);
+    color:rgb(13 14 6);
+    font-family: "bangers", sans-serif;
+    font-size: 280%;
+}
+
+.item-col1 {
+    background-color: rgb(83 121 12);
+    font-family: "bangers", sans-serif;
+    font-size: 150%;
+}
+
+@media only screen and (max-width: 640px) {
+    .grid-item {
+        font-size: 80%;
+        border: 0.5px solid #FFF;
+    }
+    .item-row1 {
+        font-size: 130%;
+    }
+    .item-row2 {
+        font-size: 200%;
+    }
+    .item-col1 {
+        font-size: 130%;
+    }
+}
+
+/* End Prices Page */
+
+
+
+/* Contact Page */
+
+
+form {
+    display: grid;
+    grid-template-columns: 30% 50%;
+    grid-template-rows: 30px 30px 30px 30px 100px 12px 12px 45px 35px 100px;
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+
+.form-label {
+    text-align: right;
+    padding-top: 6px;
+    font-weight: 600;
+}
+
+.request {
+    margin-top: 0px;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    height: 30px;
+    width: 100%;
+    border: none;
+    font-size: 100%;
+    color:rgb(13 14 6);
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    border: none;
+    font-size: 100%;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(13 14 6);
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus {
+    background-color: rgb(222 206 48);
+    outline: none;
+}
+
+.form-checkbox {
+  width: auto;
+  text-align: left;
+  margin-top: 6px;
+}
+
+input[type=submit] {
+    height: 50px;
+    background-color: rgb(13 14 6);
+    color:rgb(83 121 12);
+    font-family: "bangers", sans-serif;
+    font-size: 250%;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(83 121 12);
+    color: rgb(13 14 6);
+    box-shadow: 7px 7px 10px rgba(13, 14, 6, 0.8);
+}
+
+input[type=submit]:checked {
+    border: none;
+}
+
+@media only screen and (max-width: 640px) {
+    form {
+        grid-template-columns: 100%;
+        grid-template-rows: 15px 40px 15px 40px 15px 40px 15px 40px 15px 100px 15px 5px 0px 5px 0px 45px 0px 20px 0px 100px;
+    }
+    .form-label {
+        text-align: left;
+    }
+    input[type=text], input[type=email], input[type=tel] {
+        height: 40px;
+    }
+}
+
+
+/* End Contact Page */
